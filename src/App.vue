@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- 头部 -->
+    <v-header ></v-header>
+    
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+//引入头部组件
+import VHeader from 'components/v-header/v-header'
+
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    "v-header":VHeader
   }
 }
 </script>
